@@ -5,6 +5,28 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 const experiences = [
   {
     title: "Web Systems Engineer (GovTech)",
+    company: "DINAS INFORMASI & KOMUNIKASI DIY (DISKOMINFO DIY)",
+    location: "Yogyakarta, Indonesia",
+    period: "Mar 2026 - Present",
+    type: "Contract",
+    tech: ["PHP (Laravel)", "Vue.js", "Node.js", "Python (Django)", "MySQL", "PostgreSQL", "Geospatial Mapping"],
+    challenge: "Government systems across D_I_Yogyakarta agencies were inconsistent and hard to integrate via SPLP (Surat Penghubung Layanan Pemerintah).",
+    role: "Integrated the AI CCTV Monitoring Portal across 12 regional government sites into a unified SPLP interoperability layer, cutting manual monitoring and enabling cross-system incident detection.",
+    action: "Delivered AI CCTV Monitoring Portal plus Survey, DTSEN, and Manunggal Raharja (Dinsos) data pipelines for Abhipraya (PT. ASI PUDJIASTUTI AVIATION). Maintained 99.9% uptime and reduced cross-system data inconsistencies by ~35%; onboarded 350+ DISKOMINFO/Dinsos operators.",
+  },
+  {
+    title: "Web Systems Engineer (GovTech)",
+    company: "PT ASI PUDJIASTUTI AVIATION (SUSI AIR)",
+    location: "Pangandaran, West Java",
+    period: "Jan 2025 - Present",
+    type: "Contract",
+    tech: ["PHP (Laravel)", "Node.js", "Vue.js", "PostgreSQL", "REST APIs", "Geospatial Mapping"],
+    challenge: "Regional flight ops needed real-time pilot tracking and dispatch across Indonesia's scattered hubs.",
+    role: "Led the Web Systems Engineering of the SUSI AIR Pilot Operations Dashboard for PT ASI PUDJIASTUTI AVIATION.",
+    action: "Built live aircraft telemetry visualization, crew scheduling, flight logbook integration, and multi-site reporting served to regional hubs — served via pilot.susiair.com.",
+  },
+  {
+    title: "Web Systems Engineer (GovTech)",
     company: "PT Kencana Konsep Indonesia",
     location: "Bandung, West Java",
     period: "Oct 2024 - Jan 2026",
