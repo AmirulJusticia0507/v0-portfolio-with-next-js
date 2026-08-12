@@ -18,7 +18,7 @@ const experiences = [
     title: "Web Systems Engineer (GovTech)",
     company: "PT ASI PUDJIASTUTI AVIATION (SUSI AIR)",
     location: "Pangandaran, West Java",
-    period: "Jan 2025 - Present",
+    period: "Oct 2022 - Jan 2023",
     type: "Contract",
     tech: ["PHP (Laravel)", "Node.js", "Vue.js", "PostgreSQL", "REST APIs", "Geospatial Mapping"],
     challenge: "Regional flight ops needed real-time pilot tracking and dispatch across Indonesia's scattered hubs.",
