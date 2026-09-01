@@ -57,6 +57,7 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)"],
     urls: [
       { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-integrity", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://lex-integrity.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
   {
