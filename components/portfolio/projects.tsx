@@ -60,6 +60,30 @@ const projects = [
     ],
   },
   {
+    title: "Leaflens",
+    role: "Fullstack Engineer",
+    period: "2024 · Portfolio / Next.js",
+    description:
+      "Modern developer portfolio built with Next.js 15, React 19, TypeScript, and Tailwind CSS. Features animated sections, dark mode, component library (Radix UI), and static prerendering on Vercel with ISR. Showcases featured work, skills, experience, and contact.",
+    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Radix UI", "lucide-react", "Vercel (ISR)"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/leaflens.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://web-five-blue-64.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Al Hikmah AI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Islamic Tech",
+    description:
+      "AI-powered Quran & Hadith analysis platform using Local LLMs (100% offline). Provides semantic search, verse explanation, thematic classification, and cross-referencing across Quran and authentic Hadith collections. Built with MERN stack + Local LLM for privacy-first Islamic knowledge discovery.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)", "TypeScript"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/AI_LLM_Quran_Hadits.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://frontend-tau-sage-u1fhjey6qo.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
     title: "54_testDNA",
     role: "Backend Engineer",
     period: "2023 · Health-tech",
@@ -123,7 +147,7 @@ export function Projects() {
           {projects.map((p) => (
             <div
               key={p.title}
-              className="group bg-card border border-border rounded-xl p-5 flex flex-col flex-col h-full hover:border-primary/50 transition-all duration-300"
+              className="group bg-card border border-border rounded-xl p-5 flex flex-col h-full hover:border-primary/50 transition-all duration-300"
             >
               <div className="mb-3 flex-1">
                 <h3 className="text-foreground font-semibold text-lg leading-tight group-hover:text-primary transition-colors">
@@ -168,3 +192,4 @@ export function Projects() {
     </section>
   );
 }
+
