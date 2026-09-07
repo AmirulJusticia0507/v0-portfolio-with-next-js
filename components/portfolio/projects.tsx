@@ -61,6 +61,18 @@ const projects = [
     ],
   },
   {
+    title: "STT Engine",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Speech Technology",
+    description:
+      "Speech-to-Text engine for Indonesian language - real-time transcription API with deep learning models. Built with Node.js and deep learning models for accurate speech recognition.",
+    tech: ["Node.js", "Deep Learning", "Speech Recognition", "TensorFlow.js"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/stt-engine.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://stt-engine.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
     title: "Leaflens",
     role: "Fullstack Engineer",
     period: "2024 · Portfolio / Next.js",
