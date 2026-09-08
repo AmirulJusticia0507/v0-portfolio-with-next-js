@@ -73,6 +73,18 @@ const projects = [
     ],
   },
   {
+    title: "Face Recognition",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Computer Vision",
+    description:
+      "Face recognition system for identity verification and attendance tracking. Built with Python, OpenCV, and deep learning models for real-time face detection and recognition.",
+    tech: ["Python", "OpenCV", "Deep Learning", "Face Recognition", "Docker"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/face_recognition.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://face-recognition-gamma-teal.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
     title: "Leaflens",
     role: "Fullstack Engineer",
     period: "2024 · Portfolio / Next.js",
