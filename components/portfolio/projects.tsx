@@ -85,6 +85,30 @@ const projects = [
     ],
   },
   {
+    title: "PharmAI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Health-tech",
+    description:
+      "AI-powered pharmaceutical analysis platform for drug discovery and medication safety. Uses machine learning models for drug interaction prediction, dosage optimization, and adverse effect detection.",
+    tech: ["Python", "FastAPI", "Machine Learning", "PostgreSQL", "Docker"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/PharmAI.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://pharm-ai-rouge.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Boso Jawa AI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / NLP / Local Language",
+    description:
+      "Javanese language AI model for natural language processing, translation, and cultural preservation. Built with transformer architectures for low-resource language understanding.",
+    tech: ["Python", "PyTorch", "Transformers", "NLP", "Javanese Language"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/boso-jawa-ai.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://boso-jawa-ai.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
     title: "Leaflens",
     role: "Fullstack Engineer",
     period: "2024 · Portfolio / Next.js",
