@@ -109,6 +109,18 @@ const projects = [
     ],
   },
   {
+    title: "Lex DSS",
+    role: "Fullstack Engineer",
+    period: "2024 · Legal-tech / AI",
+    description:
+      "Legal Decision Support System (DSS) - AI-powered legal analysis platform for case law research, statute interpretation, and legal reasoning assistance. Built with MERN stack and local LLM for privacy-preserving legal intelligence.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-dss.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://lex-dss.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
     title: "Leaflens",
     role: "Fullstack Engineer",
     period: "2024 · Portfolio / Next.js",
