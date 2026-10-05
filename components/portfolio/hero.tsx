@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, Linkedin, Github, MapPin, ArrowDown } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, MapPin, ArrowDown, Download } from "lucide-react";
 import Link from "next/link";
 
 export function Hero() {
@@ -47,7 +47,15 @@ export function Hero() {
           </span>
         </div>
         
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
+          <a
+            href="/Amirul-Putra-Justicia-CV.pdf"
+            download
+            className="inline-flex items-center gap-2 px-5 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-all"
+          >
+            <Download className="w-5 h-5" />
+            Download CV
+          </a>
           <Link
             href="https://www.linkedin.com/in/amirul-putra-justicia-70ba31191"
             target="_blank"
