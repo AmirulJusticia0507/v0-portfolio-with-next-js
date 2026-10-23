@@ -7,7 +7,7 @@ const projects = [
   {
     title: "SUSI AIR Pilot Operations Dashboard",
     role: "Lead Web Systems Engineer",
-    period: "2025 · GovTech",
+    period: "2022 · GovTech",
     description:
       "Real-time pilot flight tracking and dispatch dashboard for PT ASI PUDJIASTUTI AVIATION (operates under Indonesia's national carrier brand). Live aircraft telemetry visualization, crew scheduling, flight logbook integration, and multi-site operational reporting served to regional hubs across Indonesia. Built to support SUSI AIR's humanitarian and routine flight operations.",
     tech: ["PHP (Laravel)", "Node.js", "Vue.js", "PostgreSQL", "REST APIs", "Geospatial Mapping"],
@@ -18,7 +18,7 @@ const projects = [
   {
     title: "XIV Apparel - WooCommerce E-Commerce",
     role: "Lead Fullstack Engineer",
-    period: "2024 · Fashion e-commerce",
+    period: "2019 · Fashion e-commerce",
     description:
       "Ultra-minimalist WooCommerce custom theme for XIV Apparel. Tailwind CSS + vanilla JS, multi-facet product filtering (size/category/price/availability), side-drawer cart, step-by-step guest/user checkout, OTP + WebAuthn login, QRIS static gateway, and an admin CRUD panel. Containerized with Docker Compose (WordPress + MySQL + WooCommerce).",
     tech: ["WordPress 6.x", "WooCommerce 8.x", "PHP 8.2", "Tailwind CSS v3", "Vanilla JS (ES6+)", "Docker Compose", "WebAuthn"],
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Lex Integrity",
     role: "Fullstack Engineer",
-    period: "2024 · Legal-tech / Local AI",
+    period: "2026 · Legal-tech / Local AI",
     description:
       "Local AI Policy & Regulatory Compliance Matrix: legal integrity analysis and an automatic regulation-contradiction tracker built with the MERN stack plus a 100% offline Local LLM. Maps the Indonesian legal hierarchy (UU, PP, Perpres, Perda), detects discretion/gap abuse-of-power risk, analyzes policy impact, and surfaces sanctions visually.",
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)"],
