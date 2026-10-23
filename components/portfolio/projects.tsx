@@ -1,7 +1,9 @@
 "use client";
 
-import { ExternalLink, Github, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 import Link from "next/link";
+
+import { GithubIcon } from "./github-icon";
 
 const projects = [
   {
@@ -23,7 +25,7 @@ const projects = [
       "Ultra-minimalist WooCommerce custom theme for XIV Apparel. Tailwind CSS + vanilla JS, multi-facet product filtering (size/category/price/availability), side-drawer cart, step-by-step guest/user checkout, OTP + WebAuthn login, QRIS static gateway, and an admin CRUD panel. Containerized with Docker Compose (WordPress + MySQL + WooCommerce).",
     tech: ["WordPress 6.x", "WooCommerce 8.x", "PHP 8.2", "Tailwind CSS v3", "Vanilla JS (ES6+)", "Docker Compose", "WebAuthn"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/uf-woocommerce-hybrid-core", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/uf-woocommerce-hybrid-core", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -34,7 +36,7 @@ const projects = [
       "Microservice-based IoT management platform with real-time telemetry ingestion and time-series analytics. Devices ingest via MQTT/TLS 1.3 to an EMQX broker, a Go backend exposes REST/WebSocket APIs, and data lands in PostgreSQL 16 + TimescaleDB 2.x with Redis pub/sub caching and Grafana dashboards. React/Next.js frontend for live device & metric visualization.",
     tech: ["Go 1.22", "MQTT 5 (EMQX)", "TLS 1.3", "PostgreSQL 16", "TimescaleDB 2.x", "Redis", "Grafana", "React/Next.js", "Docker Compose"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/AetherIo", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/AetherIo", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -45,7 +47,7 @@ const projects = [
       "Asset-backed, sharia-compliant ledger and payment engine built on NewSQL (CockroachDB) for strict ACID financial consistency. Integrated with legal modules (notary & law firm workflows) and supervised by a Sharia Supervisory Board. Provides real-time settlement, audit trails, and regulatory reporting for Islamic digital-finance operations.",
     tech: ["JavaScript", "Node.js", "CockroachDB", "REST APIs", "JWT", "Digital Signature"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/islamic-currency-engine", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/islamic-currency-engine", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -56,7 +58,7 @@ const projects = [
       "Local AI Policy & Regulatory Compliance Matrix: legal integrity analysis and an automatic regulation-contradiction tracker built with the MERN stack plus a 100% offline Local LLM. Maps the Indonesian legal hierarchy (UU, PP, Perpres, Perda), detects discretion/gap abuse-of-power risk, analyzes policy impact, and surfaces sanctions visually.",
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-integrity", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-integrity", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://lex-integrity.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -68,7 +70,7 @@ const projects = [
       "Speech-to-Text engine for Indonesian language - real-time transcription API with deep learning models. Built with Node.js and deep learning models for accurate speech recognition.",
     tech: ["Node.js", "Deep Learning", "Speech Recognition", "TensorFlow.js"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/stt-engine.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/stt-engine.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://stt-engine.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -80,7 +82,7 @@ const projects = [
       "Face recognition system for identity verification and attendance tracking. Built with Python, OpenCV, and deep learning models for real-time face detection and recognition.",
     tech: ["Python", "OpenCV", "Deep Learning", "Face Recognition", "Docker"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/face_recognition.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/face_recognition.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://face-recognition-gamma-teal.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -92,7 +94,7 @@ const projects = [
       "AI-powered pharmaceutical analysis platform for drug discovery and medication safety. Uses machine learning models for drug interaction prediction, dosage optimization, and adverse effect detection.",
     tech: ["Python", "FastAPI", "Machine Learning", "PostgreSQL", "Docker"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/PharmAI.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/PharmAI.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://pharm-ai-rouge.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -104,7 +106,7 @@ const projects = [
       "Javanese language AI model for natural language processing, translation, and cultural preservation. Built with transformer architectures for low-resource language understanding.",
     tech: ["Python", "PyTorch", "Transformers", "NLP", "Javanese Language"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/boso-jawa-ai.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/boso-jawa-ai.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://boso-jawa-ai.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -116,7 +118,7 @@ const projects = [
       "Legal Decision Support System (DSS) - AI-powered legal analysis platform for case law research, statute interpretation, and legal reasoning assistance. Built with MERN stack and local LLM for privacy-preserving legal intelligence.",
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-dss.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-dss.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://lex-dss.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -128,7 +130,7 @@ const projects = [
       "Modern developer portfolio built with Next.js 15, React 19, TypeScript, and Tailwind CSS. Features animated sections, dark mode, component library (Radix UI), and static prerendering on Vercel with ISR. Showcases featured work, skills, experience, and contact.",
     tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Radix UI", "lucide-react", "Vercel (ISR)"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJustisia0507/leaflens.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/leaflens.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://web-five-blue-64.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -140,7 +142,7 @@ const projects = [
       "AI-powered Quran & Hadith analysis platform using Local LLMs (100% offline). Provides semantic search, verse explanation, thematic classification, and cross-referencing across Quran and authentic Hadith collections. Built with MERN stack + Local LLM for privacy-first Islamic knowledge discovery.",
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)", "TypeScript"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJustisia0507/AI_LLM_Quran_Hadits.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/AI_LLM_Quran_Hadits.git", icon: <GithubIcon className="w-4 h-4" /> },
       { label: "Live Demo", href: "https://frontend-tau-sage-u1fhjey6qo.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
@@ -152,7 +154,7 @@ const projects = [
       "DNA testing platform automating the full sample workflow: intake, test-result processing, and a reporting engine. Built with Node.js and a PostgreSQL backend for lab staff, clinicians, and client portals.",
     tech: ["JavaScript", "Node.js", "PostgreSQL", "REST APIs"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/54_testDNA", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/54_testDNA", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -163,7 +165,7 @@ const projects = [
       "Digital Employee Performance (DEP) service for office management. Backend covering employee performance workflows, reporting, and task tracking — delivered during the CV Milimeter Yogyakarta engagement.",
     tech: ["PHP", "Laravel", "MySQL", "REST APIs"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJusticia0507/DEP_Service_OfficeWill", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/DEP_Service_OfficeWill", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -174,7 +176,7 @@ const projects = [
       "Online e-voting platform for citizen participation with secure, auditable ballot processing. Supports authentication, ballot encryption, anonymous tallying, and transparent result reporting.",
     tech: ["Python", "Django", "PostgreSQL", "JWT", "REST APIs"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJustisia0507/e-voting-system-netizen", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/e-voting-system-netizen", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
   {
@@ -185,7 +187,7 @@ const projects = [
       "Hospital queue management system: appointment scheduling, queue allocation, real-time patient flow, and clinician dashboards for a smoother healthcare experience.",
     tech: ["JavaScript", "Node.js", "MySQL", "Socket.IO", "REST APIs"],
     urls: [
-      { label: "Source code", href: "https://github.com/AmirulJustisia0507/healthcare-queue-scheduling-engine", icon: <Github className="w-4 h-4" /> },
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/healthcare-queue-scheduling-engine", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
 ];

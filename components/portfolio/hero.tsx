@@ -1,7 +1,9 @@
 "use client";
 
-import { Mail, Phone, Linkedin, Github, MapPin, ArrowDown, Download } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, ArrowDown, Download } from "lucide-react";
 import Link from "next/link";
+
+import { GithubIcon } from "./github-icon";
 
 export function Hero() {
   return (
@@ -75,7 +77,7 @@ export function Hero() {
             className="p-3 bg-[#d9e9a8] border border-foreground rounded-full hover:bg-primary transition-all duration-300 group"
             aria-label="GitHub Profile"
           >
-            <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+            <GithubIcon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
           </Link>
         </div>
       </div>

@@ -1,9 +1,10 @@
 "use client";
 
-import { Calendar, MapPin, Briefcase } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    id: "diskominfo-diy",
     title: "Web Systems Engineer (GovTech)",
     company: "DINAS INFORMASI & KOMUNIKASI DIY (DISKOMINFO DIY)",
     location: "Yogyakarta, Indonesia",
@@ -15,6 +16,7 @@ const experiences = [
     action: "Delivered AI CCTV Monitoring Portal plus Survey, DTSEN, and Manunggal Raharja (Dinsos) data pipelines for Abhipraya (PT. ASI PUDJIASTUTI AVIATION). Maintained 99.9% uptime and reduced cross-system data inconsistencies by ~35%; onboarded 350+ DISKOMINFO/Dinsos operators.",
   },
   {
+    id: "kencana-konsep",
     title: "Web Systems Engineer (GovTech)",
     company: "PT Kencana Konsep Indonesia",
     location: "Bandung, West Java",
@@ -26,6 +28,7 @@ const experiences = [
     action: "Developed and maintained using PHP (Laravel), Vue.js, Node.js, Python (Django), MySQL, PostgreSQL; applied REST/SOAP APIs, data validation, and integration pipelines.",
   },
   {
+    id: "cv-milimeter",
     title: "Web Systems Engineer (GovTech)",
     company: "CV Milimeter Yogyakarta",
     location: "Yogyakarta, Indonesia",
@@ -37,6 +40,7 @@ const experiences = [
     action: "Developed and maintained using PHP (Laravel), MySQL; applied REST/SOAP APIs, data validation, and integration pipelines.",
   },
   {
+    id: "bprs-hik-mci",
     title: "Web Systems Engineer (GovTech)",
     company: "PT. BPRS HIK MCI Yogyakarta",
     location: "Yogyakarta, Indonesia",
@@ -48,6 +52,7 @@ const experiences = [
     action: "Developed and maintained using PHP (Laravel), MySQL; applied REST/SOAP APIs, data validation, and integration pipelines.",
   },
   {
+    id: "maybank-finance",
     title: "IT Support (GovTech)",
     company: "PT. Maybank Indonesia Finance Tbk.",
     location: "Yogyakarta, Indonesia",
@@ -59,6 +64,7 @@ const experiences = [
     action: "Provided technical support and troubleshooting for branch operations.",
   },
   {
+    id: "susi-air",
     title: "Web Systems Engineer (GovTech)",
     company: "PT ASI PUDJIASTUTI AVIATION (SUSI AIR)",
     location: "Pangandaran, West Java",
@@ -70,6 +76,7 @@ const experiences = [
     action: "Built live aircraft telemetry visualization, crew scheduling, flight logbook integration, and multi-site reporting served to regional hubs — served via pilot.susiair.com.",
   },
   {
+    id: "dprd-sleman",
     title: "Web Systems Engineer (GovTech)",
     company: "Sekretaris DPRD Kabupaten Sleman",
     location: "Sleman, Yogyakarta, Indonesia",
@@ -81,6 +88,7 @@ const experiences = [
     action: "Developed and maintained using Node.js, React.js, PostgreSQL, MySQL; built REST APIs and data pipelines integrating agenda, voting, and e-Report data.",
   },
   {
+    id: "al-amin-life",
     title: "Web Systems Engineer (GovTech)",
     company: "PT. Syariah Al Amin Life Insurance",
     location: "South Jakarta, Indonesia",
@@ -109,8 +117,8 @@ export function Experience() {
           <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-border" />
           
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div key={index} className="relative pl-8 md:pl-20">
+            {experiences.map((exp) => (
+              <div key={exp.id} className="relative pl-8 md:pl-20">
                 {/* Timeline dot */}
                 <div className="absolute left-0 md:left-8 top-2 w-2 h-2 -translate-x-1/2 rounded-full bg-primary" />
                 

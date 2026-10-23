@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
+
+import { GithubIcon } from "./github-icon";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -30,7 +32,7 @@ export function Footer() {
             className="text-muted-foreground hover:text-primary transition-colors"
             aria-label="GitHub"
           >
-            <Github className="w-5 h-5" />
+            <GithubIcon className="w-5 h-5" />
           </Link>
           <Link
             href="mailto:amirulputra0507@gmail.com"
