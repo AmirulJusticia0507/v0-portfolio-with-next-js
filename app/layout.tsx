@@ -1,10 +1,11 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Archivo_Black, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _inter = Inter({ subsets: ["latin"] });
+const display = Archivo_Black({ subsets: ["latin"], weight: "400", variable: "--font-display" });
+const mono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-code" });
 
 export const metadata: Metadata = {
   title: 'Amirul Putra Justicia | Fullstack Engineer',
@@ -44,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${display.variable} ${mono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

@@ -57,6 +57,91 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)"],
     urls: [
       { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-integrity", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://lex-integrity.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "STT Engine",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Speech Technology",
+    description:
+      "Speech-to-Text engine for Indonesian language - real-time transcription API with deep learning models. Built with Node.js and deep learning models for accurate speech recognition.",
+    tech: ["Node.js", "Deep Learning", "Speech Recognition", "TensorFlow.js"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/stt-engine.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://stt-engine.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Face Recognition",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Computer Vision",
+    description:
+      "Face recognition system for identity verification and attendance tracking. Built with Python, OpenCV, and deep learning models for real-time face detection and recognition.",
+    tech: ["Python", "OpenCV", "Deep Learning", "Face Recognition", "Docker"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/face_recognition.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://face-recognition-gamma-teal.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "PharmAI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Health-tech",
+    description:
+      "AI-powered pharmaceutical analysis platform for drug discovery and medication safety. Uses machine learning models for drug interaction prediction, dosage optimization, and adverse effect detection.",
+    tech: ["Python", "FastAPI", "Machine Learning", "PostgreSQL", "Docker"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/PharmAI.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://pharm-ai-rouge.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Boso Jawa AI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / NLP / Local Language",
+    description:
+      "Javanese language AI model for natural language processing, translation, and cultural preservation. Built with transformer architectures for low-resource language understanding.",
+    tech: ["Python", "PyTorch", "Transformers", "NLP", "Javanese Language"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/boso-jawa-ai.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://boso-jawa-ai.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Lex DSS",
+    role: "Fullstack Engineer",
+    period: "2024 · Legal-tech / AI",
+    description:
+      "Legal Decision Support System (DSS) - AI-powered legal analysis platform for case law research, statute interpretation, and legal reasoning assistance. Built with MERN stack and local LLM for privacy-preserving legal intelligence.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJusticia0507/lex-dss.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://lex-dss.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Leaflens",
+    role: "Fullstack Engineer",
+    period: "2024 · Portfolio / Next.js",
+    description:
+      "Modern developer portfolio built with Next.js 15, React 19, TypeScript, and Tailwind CSS. Features animated sections, dark mode, component library (Radix UI), and static prerendering on Vercel with ISR. Showcases featured work, skills, experience, and contact.",
+    tech: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Radix UI", "lucide-react", "Vercel (ISR)"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/leaflens.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://web-five-blue-64.vercel.app", icon: <Globe className="w-4 h-4" /> },
+    ],
+  },
+  {
+    title: "Al Hikmah AI",
+    role: "Fullstack Engineer",
+    period: "2024 · AI / Islamic Tech",
+    description:
+      "AI-powered Quran & Hadith analysis platform using Local LLMs (100% offline). Provides semantic search, verse explanation, thematic classification, and cross-referencing across Quran and authentic Hadith collections. Built with MERN stack + Local LLM for privacy-first Islamic knowledge discovery.",
+    tech: ["React", "Node.js", "MongoDB", "Express", "MERN", "Local LLM (offline)", "TypeScript"],
+    urls: [
+      { label: "Source code", href: "https://github.com/AmirulJustisia0507/AI_LLM_Quran_Hadits.git", icon: <Github className="w-4 h-4" /> },
+      { label: "Live Demo", href: "https://frontend-tau-sage-u1fhjey6qo.vercel.app", icon: <Globe className="w-4 h-4" /> },
     ],
   },
   {
@@ -123,7 +208,7 @@ export function Projects() {
           {projects.map((p) => (
             <div
               key={p.title}
-              className="group bg-card border border-border rounded-xl p-5 flex flex-col flex-col h-full hover:border-primary/50 transition-all duration-300"
+              className="group bg-card border border-border rounded-xl p-5 flex flex-col h-full hover:border-primary/50 transition-all duration-300"
             >
               <div className="mb-3 flex-1">
                 <h3 className="text-foreground font-semibold text-lg leading-tight group-hover:text-primary transition-colors">
@@ -168,3 +253,4 @@ export function Projects() {
     </section>
   );
 }
+
