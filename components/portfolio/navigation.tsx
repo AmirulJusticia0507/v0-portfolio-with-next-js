@@ -28,13 +28,13 @@ export function Navigation() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b border-border"
+          ? "bg-[#f3efe6]/90 backdrop-blur-lg border-b border-foreground"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
         <Link href="/" className="text-lg font-bold text-foreground">
-          APJ<span className="text-primary">.</span>
+          AMIRUL<span className="text-primary">®</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ export function Navigation() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-xs font-mono uppercase tracking-wider text-foreground hover:text-primary transition-colors"
               >
                 {item.label}
               </Link>
@@ -52,7 +52,7 @@ export function Navigation() {
           <li>
             <Link
               href="mailto:amirulputra0507@gmail.com"
-              className="px-4 py-2 text-sm bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-all"
+              className="px-5 py-2 text-sm bg-foreground text-[#fffaf0] rounded-full hover:bg-primary hover:text-foreground transition-all"
             >
               Hire Me
             </Link>
