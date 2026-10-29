@@ -198,6 +198,7 @@ const projects = [
       "Interactive learning ecosystem combining chemistry, forensic science, and 3D human anatomy. Ships a periodic table of 118 elements, element comparison, flashcards, a stoichiometry calculator (molar mass, equation balancing, mol conversions, solutions), a server-generated quiz with server-side answer keys, and per-user bookmarks. Vue 3 + Vite + Tailwind CSS + Three.js frontend, FastAPI backend with PostgreSQL and Redis, plus a Go service.",
     tech: ["Vue 3", "Vite", "Tailwind CSS", "Three.js", "FastAPI", "PostgreSQL", "Redis", "Go"],
     urls: [
+      { label: "Live Demo", href: "https://biochemverse.vercel.app/", icon: <Globe className="w-4 h-4" /> },
       { label: "Source code", href: "https://github.com/AmirulJusticia0507/BioChemVerse", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
@@ -209,6 +210,7 @@ const projects = [
       "Chemistry learning web app for exploring the periodic table and polyatomic ions, with quizzes, a stoichiometry calculator, element comparison, study tools, and an admin panel for data management. Vue 3 + Pinia + Tailwind CSS v4 frontend, Express 5 + Prisma backend on PostgreSQL, JWT auth with httpOnly refresh cookies, deployed to Vercel. The direct predecessor of BioChemVerse.",
     tech: ["Vue 3", "Vite", "Tailwind CSS v4", "Pinia", "Express 5", "Prisma", "PostgreSQL", "Vercel"],
     urls: [
+      { label: "Live Demo", href: "https://chemsphere-app.vercel.app/", icon: <Globe className="w-4 h-4" /> },
       { label: "Source code", href: "https://github.com/AmirulJusticia0507/ChemSphere", icon: <GithubIcon className="w-4 h-4" /> },
     ],
   },
