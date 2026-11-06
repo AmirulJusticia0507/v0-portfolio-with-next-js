@@ -1,6 +1,24 @@
 "use client";
 
-import { Globe } from "lucide-react";
+import {
+  BookOpen,
+  Briefcase,
+  Cpu,
+  Dna,
+  FlaskConical,
+  Globe,
+  HeartPulse,
+  Landmark,
+  Languages,
+  Leaf,
+  Mic,
+  Pill,
+  Radar,
+  Scale,
+  ScanFace,
+  ShoppingBag,
+  Vote,
+} from "lucide-react";
 import Link from "next/link";
 
 import { EcommerceShowcase } from "./ecommerce-showcase";
@@ -8,6 +26,7 @@ import { GithubIcon } from "./github-icon";
 
 const projects = [
   {
+    preview: { icon: Radar, bg: "bg-[#102f2a]/10" },
     title: "SUSI AIR Pilot Operations Dashboard",
     role: "Lead Web Systems Engineer",
     period: "2022 · GovTech",
@@ -19,6 +38,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: ShoppingBag, bg: "bg-[#ff5c35]/15" },
     title: "XIV Apparel - WooCommerce E-Commerce",
     role: "Lead Fullstack Engineer",
     period: "2019 · Fashion e-commerce",
@@ -30,6 +50,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Cpu, bg: "bg-[#a8c7ff]/40" },
     title: "AetherIo - Enterprise IoT Platform",
     role: "Lead Backend Engineer",
     period: "2024 · IoT / Real-time analytics",
@@ -41,6 +62,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Landmark, bg: "bg-[#d9e9a8]/60" },
     title: "Islamic Digital Currency Engine (IDCE)",
     role: "Fullstack Engineer",
     period: "2024 · FinTech / Sharia-compliant",
@@ -52,6 +74,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Scale, bg: "bg-[#ffd9ca]/60" },
     title: "Lex Integrity",
     role: "Fullstack Engineer",
     period: "2026 · Legal-tech / Local AI",
@@ -64,6 +87,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Mic, bg: "bg-[#ff5c35]/15" },
     title: "STT Engine",
     role: "Fullstack Engineer",
     period: "2024 · AI / Speech Technology",
@@ -76,6 +100,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: ScanFace, bg: "bg-[#a8c7ff]/40" },
     title: "Face Recognition",
     role: "Fullstack Engineer",
     period: "2024 · AI / Computer Vision",
@@ -88,6 +113,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Pill, bg: "bg-[#ff5c35]/15" },
     title: "PharmAI",
     role: "Fullstack Engineer",
     period: "2024 · AI / Health-tech",
@@ -100,6 +126,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Languages, bg: "bg-[#d9e9a8]/60" },
     title: "Boso Jawa AI",
     role: "Fullstack Engineer",
     period: "2024 · AI / NLP / Local Language",
@@ -112,6 +139,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Scale, bg: "bg-[#102f2a]/10" },
     title: "Lex DSS",
     role: "Fullstack Engineer",
     period: "2024 · Legal-tech / AI",
@@ -124,6 +152,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Leaf, bg: "bg-[#d9e9a8]/60" },
     title: "Leaflens",
     role: "Fullstack Engineer",
     period: "2024 · Portfolio / Next.js",
@@ -136,6 +165,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: BookOpen, bg: "bg-[#ffd9ca]/60" },
     title: "Al Hikmah AI",
     role: "Fullstack Engineer",
     period: "2024 · AI / Islamic Tech",
@@ -148,6 +178,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Dna, bg: "bg-[#a8c7ff]/40" },
     title: "54_testDNA",
     role: "Backend Engineer",
     period: "2023 · Health-tech",
@@ -159,6 +190,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Briefcase, bg: "bg-[#e5dfd4]/70" },
     title: "DEP Service OfficeWill",
     role: "Backend Engineer",
     period: "2023 · GovTech / HR",
@@ -170,6 +202,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: Vote, bg: "bg-[#102f2a]/10" },
     title: "E-Voting System Netizen",
     role: "Backend Engineer",
     period: "2023 · Civic-tech",
@@ -181,6 +214,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: HeartPulse, bg: "bg-[#ff5c35]/15" },
     title: "Healthcare Queue Scheduling Engine",
     role: "Backend Engineer",
     period: "2023 · Health-tech",
@@ -192,6 +226,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: FlaskConical, bg: "bg-[#a8c7ff]/40" },
     title: "BioChemVerse",
     role: "Fullstack Engineer",
     period: "2026 · EdTech / Chemistry & Anatomy",
@@ -204,6 +239,7 @@ const projects = [
     ],
   },
   {
+    preview: { icon: FlaskConical, bg: "bg-[#d9e9a8]/60" },
     title: "ChemSphere",
     role: "Fullstack Engineer",
     period: "2025 · EdTech / Chemistry",
@@ -235,8 +271,14 @@ export function Projects() {
           {projects.map((p) => (
             <div
               key={p.title}
-              className="group bg-card border border-border rounded-xl p-5 flex flex-col h-full hover:border-primary/50 transition-all duration-300"
+              onClick={() => p.urls[0] && window.open(p.urls[0].href, "_blank", "noopener")}
+              className="group bg-card border border-border rounded-xl p-5 flex flex-col h-full hover:border-primary/50 transition-all duration-300 cursor-pointer"
             >
+              <div className="relative h-28 mb-3 rounded-lg border border-border overflow-hidden flex items-center justify-center bg-secondary/40">
+                <div className={`absolute inset-0 ${p.preview.bg}`} />
+                <p.preview.icon className="size-10 text-foreground/40 relative" aria-hidden="true" />
+              </div>
+
               <div className="mb-3 flex-1">
                 <h3 className="text-foreground font-semibold text-lg leading-tight group-hover:text-primary transition-colors">
                   {p.title}
@@ -282,4 +324,3 @@ export function Projects() {
     </section>
   );
 }
-
