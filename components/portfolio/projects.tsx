@@ -3,6 +3,7 @@
 import { Globe } from "lucide-react";
 import Link from "next/link";
 
+import { EcommerceShowcase } from "./ecommerce-showcase";
 import { GithubIcon } from "./github-icon";
 
 const projects = [
@@ -275,6 +276,8 @@ export function Projects() {
             </div>
           ))}
         </div>
+
+        <EcommerceShowcase />
       </div>
     </section>
   );
